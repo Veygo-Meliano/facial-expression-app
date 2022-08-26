@@ -37,4 +37,4 @@ if file is not None:
     class_names = classes.values()
     class_name = list(class_names)
     pred_cls = class_name[np.argmax(pred)]
-    st.write(pred_cls, 100 * np.max(pred),'')
+    st.write(pred_cls, 100 * np.max(pred),'persen')
