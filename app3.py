@@ -22,7 +22,7 @@ file = st.file_uploader("Upload an image", type=["png", "jpg", "jpeg"])
 
 if file is not None:
 
-    st.image(file, use_column_width=True)    
+    st.image(file, use_column_width=(128,128))    
 
     img = tf.keras.preprocessing.image.load_img(file, target_size=(48,48))
     
